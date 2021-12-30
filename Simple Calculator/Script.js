@@ -11,12 +11,29 @@ if ( ( num1 <= 0 ) || ( num1 > 0 ) ) {
 //Input end
 
 //Calculator start
-       if (act == "+") { alert(num1 + num2); }
-       if (act == "-") { alert(num1 - num2); }
-       if (act == "*") { alert(num1 * num2); }
-     if ( ( act == "/" ) && ( num2 == 0)) { alert("Error: Mathmaticli Undifiend"); }
-       if (act == "/") { alert(num1 / num2); }
-       if (act == "%") { alert(num1 * num2 /100 ); }
+switch ( act ) {
+
+        case "+":
+         alert(num1 + num2);
+          break;
+
+        case "-":
+         alert(num1 - num2);
+          break;
+
+        case "*":
+         alert(num1 * num2);
+          break;
+
+        case "/":
+         if ( ( act == "/" ) && ( num2 == 0) )
+         { alert("Error: Undifiend"); } else { alert(num1 / num2); }
+          break;
+
+        case "%":
+         alert(num1 * num2 /100 );
+          break;
+      }
 //Calculator end
 
 //Error start
